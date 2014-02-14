@@ -9,7 +9,10 @@ CCScene* HelloWorld::scene()
     
     // 'layer' is an autorelease object
     HelloWorld *layer = HelloWorld::create();
-
+    
+    // set background color of the whole scene
+    layer->initWithColor(ccc4(255,255,255,255));
+    
     // add layer as a child to scene
     scene->addChild(layer);
 
@@ -63,15 +66,13 @@ bool HelloWorld::init()
 
     // add the label as a child to this layer
     this->addChild(pLabel, 1);
-
-    // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-
-    // position the sprite on the center of the screen
-    pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
-    // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
+    
+    // add da hotdog
+    CCSprite* hotdogSprite = CCSprite::create("Hotdog.png");
+    
+    hotdogSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+    
+    this->addChild(hotdogSprite,0);
     
     return true;
 }
