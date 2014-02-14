@@ -6,3 +6,4 @@ proj.win32
 proj.marmalade
 proj.winrt
 proj.linux
+proj.android/obj
