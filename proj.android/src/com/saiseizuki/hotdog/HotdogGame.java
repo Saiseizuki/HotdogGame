@@ -41,8 +41,8 @@ public class HotdogGame extends Cocos2dxActivity{
     	
     	return glSurfaceView;
     }
-
+	
     static {
         System.loadLibrary("cocos2dcpp");
-    }     
+    }
 }
